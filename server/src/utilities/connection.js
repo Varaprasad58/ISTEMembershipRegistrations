@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-require('dotenv').config();
+// require('dotenv').config();
 
-const url = process.env.URL;
+const url = "mongodb+srv://akireddyvaraprasad58_db_user:0niyeZE1bIWZYqF0@cluster0.lyka01a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const registrationSchema = new mongoose.Schema({
   name: { type: String, required: [true, "Required field"] },

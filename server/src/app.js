@@ -6,8 +6,8 @@ const router = require('./routes/routing');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const dotenv = require('dotenv');
-dotenv.config();
+// const dotenv = require('dotenv');
+// dotenv.config();
 
 
 app.use(cors());
@@ -19,5 +19,5 @@ app.use('/',router);
 // app.use(errorLogger);
 
 
-app.listen(process.env.PORT);
+app.listen(4000);
 console.log("App listening in the port 4000");
